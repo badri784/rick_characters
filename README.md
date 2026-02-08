@@ -1,16 +1,32 @@
 # rick_characters
+<img width="394" height="340" alt="image" src="https://github.com/user-attachments/assets/b0abfd34-6920-4e64-8409-7f37b35afc1a" />
 
-A new Flutter project.
 
-## Getting Started
+🛸 Rick & Morty Characters App (Flutter)
 
-This project is a starting point for a Flutter application.
+A Flutter application that displays characters from the Rick and Morty API, built using Clean Architecture principles, Bloc (Cubit) for state management, and Pagination + Search support.
 
-A few resources to get you started if this is your first Flutter project:
+📱 Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+🧑‍🚀 Display Rick & Morty characters in a responsive grid
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+🔍 Real-time search by character name
+
+♾️ Infinite scroll pagination
+
+📄 Character details screen with smooth Hero animation
+
+🌐 Offline detection with user-friendly UI
+
+⚡ Optimized performance (single API request per page)
+
+🧠 Clean separation of concerns (UI / Business / Data layers)
+🧪 Performance Notes
+
+No heavy logic inside build()
+
+Minimal rebuilds
+
+Network requests are fully controlled
+
+Smooth scrolling even with large datasets
