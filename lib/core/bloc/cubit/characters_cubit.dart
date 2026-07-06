@@ -15,7 +15,6 @@ class CharactersCubit extends Cubit<CharactersState> {
   void getAllCharacters() async {
     if (isLoading) return;
     isLoading = true;
-
     final charactersBack = await charactersRepo.getCharacters(currentPage);
     _allCharacters.addAll(charactersBack.characters!);
     emit(CharactersLoaded(_allCharacters));

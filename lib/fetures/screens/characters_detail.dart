@@ -23,7 +23,6 @@ class CharactersDetailScreen extends StatelessWidget {
             fontSize: 24,
           ),
           textAlign: TextAlign.center,
-
           child: AnimatedTextKit(
             // repeatForever: true,
             animatedTexts: [
@@ -78,6 +77,7 @@ class CharactersDetailScreen extends StatelessWidget {
               Container(
                 margin: const EdgeInsets.fromLTRB(14, 14, 14, 0),
                 padding: const EdgeInsets.all(8),
+
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -127,22 +127,6 @@ class CharactersDetailScreen extends StatelessWidget {
                         style: Textstyles.font16white,
                       ),
                     ),
-
-                    // TextInfo(text: 'Gender : ', value: character.gender!),
-                    // verticalSpace(4),
-                    // TextInfo(text: 'status :q ', value: character.status!),
-                    // verticalSpace(4),
-                    // TextInfo(text: 'species : ', value: character.species!),
-                    // verticalSpace(4),
-
-                    // TextInfo(
-                    //   text: 'type : ',
-                    //   value: character.type!.isEmpty
-                    //       ? 'unknown'
-                    //       : character.type!,
-                    // ),
-                    // verticalSpace(4),
-                    // TextInfo(text: 'created : ', value: character.created!),
                   ],
                 ),
               ),
