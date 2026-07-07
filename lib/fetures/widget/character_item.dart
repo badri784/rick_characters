@@ -113,19 +113,10 @@ class CharacterItem extends StatelessWidget {
           ),
           child: Hero(
             tag: character.id!,
-            child: CustomCachedNetworkImage(
-              imageUrl: character.image!,
-            ),
+            child: CustomCachedNetworkImage(imageUrl: character.image!),
           ),
         ),
       ),
     );
   }
 }
-// FadeInImage.assetNetwork(
-//               placeholder: 'assets/images/loading_gray.gif',
-//               image: character.image!,
-//               fit: BoxFit.cover,
-//               // width: 20,
-//               // height: 20,
-//             ),
