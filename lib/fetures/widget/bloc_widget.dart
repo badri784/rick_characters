@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:loading_animation_widget/loading_animation_widget.dart';
+import 'package:rick_characters/core/theming/colors.dart';
 import '../../core/bloc/cubit/characters_cubit.dart';
 import 'characters_grid.dart';
 // import 'characters_loading.dart';
@@ -36,7 +38,6 @@ class _CharactersBodyState extends State<CharactersBody> {
                 context.read<CharactersCubit>().getAllCharacters();
               }
               return true;
-              // return
             },
             child: CharactersGrid(characters: state.characters),
           );
@@ -44,7 +45,12 @@ class _CharactersBodyState extends State<CharactersBody> {
         // else if (state is CharactersLoading) {
         //   return const CharactersLoadingWidget();
         // }
-        return const Center(child: CircularProgressIndicator());
+        return Center(
+          child: LoadingAnimationWidget.staggeredDotsWave(
+            size: 50,
+            color: ColorsManger.white,
+          ),
+        );
       },
     );
   }

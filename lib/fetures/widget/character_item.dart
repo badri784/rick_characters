@@ -1,3 +1,4 @@
+import 'package:rick_characters/core/widget/custom_cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:rick_characters/core/helpers/height.dart';
 
@@ -110,15 +111,10 @@ class CharacterItem extends StatelessWidget {
               ],
             ),
           ),
-
           child: Hero(
             tag: character.id!,
-            child: FadeInImage.assetNetwork(
-              placeholder: 'assets/images/loading_gray.gif',
-              image: character.image!,
-              fit: BoxFit.cover,
-              width: 20,
-              height: 20,
+            child: CustomCachedNetworkImage(
+              imageUrl: character.image!,
             ),
           ),
         ),
@@ -126,3 +122,10 @@ class CharacterItem extends StatelessWidget {
     );
   }
 }
+// FadeInImage.assetNetwork(
+//               placeholder: 'assets/images/loading_gray.gif',
+//               image: character.image!,
+//               fit: BoxFit.cover,
+//               // width: 20,
+//               // height: 20,
+//             ),
