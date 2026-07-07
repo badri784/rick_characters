@@ -37,14 +37,11 @@ dependencies:
   build_runner: ^2.11.0
   retrofit: ^4.9.2
   retrofit_generator: ^10.2.1
-  flutter_svg: ^2.2.3
   animated_text_kit: ^4.3.0
   dio: ^5.9.1
   flutter_offline: ^6.0.0
-  bloc: ^9.2.0
   json_serializable: ^6.12.0
   json_annotation: ^4.10.0
-  meta: ^1.17.0
   flutter_bloc: ^9.1.1
   flutter_native_splash: ^2.4.7
   cached_network_image: ^3.4.1

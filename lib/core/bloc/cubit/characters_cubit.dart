@@ -1,5 +1,5 @@
-import 'package:bloc/bloc.dart';
-import 'package:meta/meta.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../models/result/results.dart';
 import '../../networking/repo/characters_repo.dart';
 
